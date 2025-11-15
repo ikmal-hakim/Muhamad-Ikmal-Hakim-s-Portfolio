@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Muhamad Ikmal Hakim - Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            font-weight: 300;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .portfolio-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: white;
+            padding: 10px;
+        }
+        .portfolio-item h3 {
+            margin: 15px 0 10px;
+            font-size: 1.5em;
+        }
+        .portfolio-item p {
+            margin: 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+        .portfolio-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .portfolio-item a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        #contact p {
+            font-size: 1.1em;
+            text-align: center;
+            margin: 10px 0;
+        }
+        #contact a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            word-break: break-word;
+        }
+        #contact a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Muhamad Ikmal Hakim</h1>
+        <p>Creative Editor | Video and Graphic Design Specialist</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Muhamad Ikmal Hakim, an experienced editor with [X years] of expertise in video editing and graphic design. I am proficient in Adobe Premiere, After Effects, Photoshop, and Illustrator. I have worked on various creative projects ranging from video content to compelling graphic designs.</p>
+        <p>My vision: To create dynamic and effective works that convey messages through creative editing and design.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://i.imgur.com/bhq82F4.png" alt="Weekend Runner Club Logo" />
+                <h3>Weekend Runner Club Logo</h3>
+                <p>Logo design for a running club with a minimalist and modern style using Adobe Illustrator.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://i.imgur.com/s05QsZD.png" alt="Muscle Red Character Illustration" />
+                <h3>Muscle Red Character Illustration</h3>
+                <p>Illustration of a muscular character with dramatic explosion effects using Adobe Photoshop and Illustrator.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://i.imgur.com/pcrrmQv.png" alt="Demon Slash Illustration" />
+                <h3>Demon Slash Illustration</h3>
+                <p>Demon character design with a dynamic "SLASH!" text effect for creative branding.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://i.imgur.com/9bpGbXn.png" alt="Thunder Monster Illustration" />
+                <h3>Thunder Monster Illustration</h3>
+                <p>Monster character design with lightning effects and a powerful aura.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:muhammadikmalhakim52@gmail.com">muhammadikmalhakim52@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ikmal-hakim-2b4a02395" target="_blank" rel="noopener">www.linkedin.com/in/ikmal-hakim-2b4a02395</a></p>
+        <p>Online Portfolio: <a href="#" onclick="alert('This is your online portfolio page!'); return false;">Link from this website</a></p>
+        <p>Phone Number: <a href="tel:+62895320950030">+62 89-5320-950030</a></p>
+        <p>Feel free to contact me for collaborations or job opportunities!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Muhamad Ikmal Hakim. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
